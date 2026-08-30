@@ -1,0 +1,11 @@
+W15 SEVALLA PHASE-A SOURCE QA
+=============================
+PASS — index.html is intentionally noindex
+PASS — 404.html is intentionally noindex
+PASS — 404 marker is unique
+PASS — validation image is 1200x628 WebP
+PASS — robots.txt allows crawling
+PASS — no GSC verification tag
+PASS — no campaign article
+PASS — no guessed Sevalla hostname/canonical
+PASS — repository requires no build step
