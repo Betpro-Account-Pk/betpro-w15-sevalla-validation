@@ -1,11 +1,14 @@
-W15 SEVALLA PHASE-A SOURCE QA
-=============================
-PASS — index.html is intentionally noindex
-PASS — 404.html is intentionally noindex
-PASS — 404 marker is unique
+W15 SEVALLA PHASE-A v2 SOURCE QA
+=================================
+PASS — exact hostname locked: https://betpro-account-ecvu1.sevalla.page/
+PASS — homepage canonical aligned to exact hostname
+PASS — OG URL/image aligned to exact hostname
+PASS — robots.txt points to exact sitemap URL
+PASS — sitemap.xml contains only exact validation root
+PASS — index.html remains intentional noindex
+PASS — 404.html remains noindex
+PASS — unique 404 marker present
 PASS — validation image is 1200x628 WebP
-PASS — robots.txt allows crawling
 PASS — no GSC verification tag
 PASS — no campaign article
-PASS — no guessed Sevalla hostname/canonical
-PASS — repository requires no build step
+PASS — no production backlink package

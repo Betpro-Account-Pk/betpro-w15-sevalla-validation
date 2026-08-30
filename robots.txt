@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap will be added after Sevalla reveals the exact generated hostname.
+Sitemap: https://betpro-account-ecvu1.sevalla.page/sitemap.xml

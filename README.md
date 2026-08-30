@@ -1,21 +1,28 @@
-# W15 Sevalla Phase-A Validation
+# W15 Sevalla Phase-A v2
 
-Temporary host-validation repository only.
+Exact Sevalla hostname is now locked:
+
+https://betpro-account-ecvu1.sevalla.page/
+
+This update aligns:
+- canonical
+- Open Graph URL
+- Open Graph image
+- robots.txt sitemap line
+- sitemap.xml
+
+Phase-A remains intentionally `noindex`.
 
 ## Sevalla settings
-
-- Repository branch: `main`
-- Build command: leave blank
-- Publish directory: leave blank (repository root)
-- Root directory: leave blank/default
+- Branch: `main`
+- Build site before publishing: OFF
+- Root directory: `.`
+- Publish directory: blank
 - Index file: `index.html`
 - Error file: `404.html`
 - Auto-deploy: ON
 
-The homepage is intentionally `noindex`.
+Upload/commit all six public files to the repository root. The push should auto-deploy.
 
-After the first successful deployment, copy the exact generated `*.sevalla.app`
-hostname. Then sitemap/canonical validation files can be aligned to that exact
-hostname before the Google crawl test.
-
-Do not add a GSC tag or the final W15 article during Phase A.
+Do not add a GSC tag yet.
+Do not publish the W15 article yet.

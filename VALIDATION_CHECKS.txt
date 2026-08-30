@@ -1,0 +1,50 @@
+W15 SEVALLA PHASE-A v2 — LIVE CHECKS
+=====================================
+
+Target:
+https://betpro-account-ecvu1.sevalla.page/
+
+1) Root
+curl.exe -I https://betpro-account-ecvu1.sevalla.page/
+Expected: HTTP 200
+
+2) robots.txt
+curl.exe -I https://betpro-account-ecvu1.sevalla.page/robots.txt
+Expected: HTTP 200
+
+3) sitemap.xml
+curl.exe -I https://betpro-account-ecvu1.sevalla.page/sitemap.xml
+Expected: HTTP 200
+
+4) validation.webp
+curl.exe -I https://betpro-account-ecvu1.sevalla.page/validation.webp
+Expected: HTTP 200
+Expected: Content-Type image/webp
+
+5) Real 404
+curl.exe -I https://betpro-account-ecvu1.sevalla.page/w15-definitely-not-found-20260830
+Expected: HTTP 404
+
+6) Browser marker
+Root must show:
+W15-SEVALLA-PHASE-A-2026-08-30
+
+Fake path should show:
+W15-SEVALLA-REAL-404-CHECK
+
+7) Google Rich Results Test
+Test:
+https://betpro-account-ecvu1.sevalla.page/
+
+Expected:
+- Crawl allowed: Yes
+- Page fetch: Successful
+- Indexing allowed: No
+
+Indexing allowed = No is correct in Phase A because noindex is deliberate.
+
+8) Visual gate
+- HTTPS no warning
+- no forced Sevalla ad/interstitial
+- no user-generated-site warning
+- WebP loads
